@@ -81,6 +81,17 @@ namespace Haikunator.Tests
 
 			StringAssert.IsMatch(@"(haiku)(-)(nator)$", haikunator.Haikunate(tokenLength: 0));
 		}
-	}
+
+        [Test]
+        public string TestSeussinate()
+        {
+            haikunator.Adjectives = new[] { "Great", "Marvelous", "Circus", "Muzzle", "Enourmous", "Humming", "Thneedy", "Elephant" };
+            haikunator.Nouns = new[] { "Horton", "Grinch", "Who", "Thing", "Once-ler", "JoJo", "Lorax", "Zax" };
+
+            return haikunator.Haikunate( tokenLength: 0 );
+        }
+
+
+    }
 }
 
