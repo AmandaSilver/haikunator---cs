@@ -4,7 +4,7 @@ solution: Haikunator.sln
 mono:
   - latest
   - 3.12.0
-  - 3.10.0
+  - 3.10.0 
 
 install:
   - nuget restore Haikunator.sln
